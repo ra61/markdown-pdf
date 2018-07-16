@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline';style-src 'self' 'unsafe-inline';">
+    <title>md to htpl and pdf</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="card ">
+        <div class="card-header text-center">
+            <h3>md to pdf</h3>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <!-- <label for="md_path"> -->
+                        1.请选择源markdown文件路径：
+                        <input type="file" id="md_path" webkitdirectory title="源markdown文件路径">
+                    <!-- </label> -->
+                </li>
+                <li class="list-group-item">
+                    <!-- <label for="pdf_path"> -->
+                        3.请选择生成的pdf文件存储路径：
+                        <input type="file" id="pdf_path" webkitdirectory title="生成的pdf文件存储路径">
+                    <!-- </label> -->
+                </li>
+
+            </ul>
+        </div>
+        <div class="card-footer text-center" style="position: relative">
+            <p id="msg" class="hidden" style="color: #eb611a;position: absolute;top:-30px"></p>
+            <button class="btn btn-success" id="startTask">开始</button>
+        </div>
+        <div class="progress " id="progress-bar" style="width: 100%"></div>
+
+    </div>
+
+
+
+
+    <!--<label for=""></label>-->
+
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <!-- <script>require('electron-connect').client.create()</script> -->
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+
+</body>
+
+</html>

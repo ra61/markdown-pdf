@@ -1,0 +1,25 @@
+{
+  "name": "electron-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-connect": "^0.6.3",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "@shd101wyy/mume": "^0.3.3",
+    "async": "^2.6.1",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "puppeteer": "^1.6.0"
+  }
+}
